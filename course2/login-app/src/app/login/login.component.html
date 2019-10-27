@@ -1,0 +1,9 @@
+<input type="text" placeholder="username" [(ngModel)]="login.username" name="username">
+<input type="text" placeholder="password" [(ngModel)]="login.username" name="username">
+<button (click)="save()">Save</button>
+
+<ul>
+    <li *ngFor="let login of loginList">
+        {{todo.task}}, {{todo.name}} <button (click)="delete(todo.id)" >delete</button>
+    </li>
+</ul>
